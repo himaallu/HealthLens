@@ -1,7 +1,6 @@
 # utils/generate_soap.py
 import google.generativeai as genai
-from config import GEMINI_API_KEY
-
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=GEMINI_API_KEY)
 
 def generate_soap_notes(transcript_text):
