@@ -31,32 +31,24 @@ It combines **speech-to-text transcription** with **LLM-powered summarization** 
 ---
 ## ⚡ Installation & Setup
 
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/<your-username>/HealthLens.git
-   cd HealthLens
-Create and activate virtual environment
+## 1. Clone this repository  
+   git clone https://github.com/<your-username>/HealthLens.git  
+   cd HealthLens  
 
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
-Install dependencies
+## 2. Create and activate virtual environment  
+   python3 -m venv venv  
+   source venv/bin/activate   # macOS/Linux  
+   venv\Scripts\activate      # Windows  
 
-bash
-Copy code
-pip install -r requirements.txt
-Add your API keys
-Create a file called config.py in the root folder:
+## 3. Install dependencies  
+   pip install -r requirements.txt  
 
-python
-Copy code
-ASSEMBLYAI_API_KEY = "your_assemblyai_key"
-GEMINI_API_KEY = "your_gemini_api_key"
-Run the app
+## 4. Add your API keys  
+   Create a file called config.py in the root folder with the following content:  
+   ASSEMBLYAI_API_KEY = "your_assemblyai_key"  
+   GEMINI_API_KEY = "your_gemini_api_key"  
 
-bash
-Copy code
-streamlit run app.py
+## 5. Run the app  
+   streamlit run app.py
+
 
