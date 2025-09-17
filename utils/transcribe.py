@@ -1,9 +1,7 @@
 # utils/transcribe.py
 import assemblyai as aai
-from config import ASSEMBLYAI_API_KEY  # Store your API key here
-
-# Set AssemblyAI API key globally
-aai.settings.api_key = "7bca7b06a25b4bb1931559bf074833c3"
+ASSEMBLYAI_API_KEY = st.secrets["ASSEMBLYAI_API_KEY"]
+aai.settings.api_key = ASSEMBLYAI_API_KEY
 
 def transcribe_audio(audio_file):
     """
