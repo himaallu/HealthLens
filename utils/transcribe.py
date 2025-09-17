@@ -1,5 +1,6 @@
 # utils/transcribe.py
 import assemblyai as aai
+import streamlit as st
 ASSEMBLYAI_API_KEY = st.secrets["ASSEMBLYAI_API_KEY"]
 aai.settings.api_key = ASSEMBLYAI_API_KEY
 
